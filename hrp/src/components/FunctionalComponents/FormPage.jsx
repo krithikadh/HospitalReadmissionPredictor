@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/FormPage.css";
+import hrpLogo from '../../assets/hrp logo.png';
 
 const FormPage = () => {
   const navigate = useNavigate();
@@ -52,16 +53,14 @@ const FormPage = () => {
   return (
     <div className="page-container">
       <div className="info-section">
-        <h1>Hospital Readmission Predictor</h1>
+        {/* <img src={hrpLogo} /> */}
+        <h1>HRP - Hospital Readmission Predictor</h1>
         <p>
           Hospital Readmission Predictor is an AI-powered web application designed
           to help healthcare providers assess the likelihood of a patient being
           readmitted after discharge. By analyzing patient demographics, medical
           history, and clinical details, the system provides instant predictions
-          and actionable insights.
-        </p>
-        <p>
-          This tool supports doctors, nurses, and hospital administrators in:
+          and actionable insights. This tool supports doctors, nurses, and hospital administrators in:
         </p>
         <ul>
           <li>Improving patient care through early identification of high-risk patients.</li>
